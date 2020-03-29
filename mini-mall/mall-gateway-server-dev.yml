@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: mall-gateway-server
+server:
+  port: 9015
+zuul:
+  prefix: /api #添加路由前缀
+  routes:
+    mall-basis-provider:
+      path: /basis/**
+    mall-investment-provider:
+      path: /invest/** #以/api/invest/**开头的请求，全部由招商微服务处理
+    mall-sales-provider:
+      path: /sales/**
+    mall-account-provider:
+      path: /account/**
+    mall-product-provider:
+      path: /product/**
+    mall-stock-provider:
+      path: /stock/**
+  host:
+    socket-timeout-millis: 60000
+    connect-timeout-millis: 30000
+ribbon:
+  ConnectTimeout: 60000
+  ReadTimeout: 60000
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
