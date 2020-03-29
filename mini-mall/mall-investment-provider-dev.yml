@@ -1,0 +1,15 @@
+server:
+  port: 9025
+spring:
+  application:
+    name: mall-investment-provider
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3380/mall_invest?characterEncoding=utf-8
+    username: root
+    password: Anbang713
+  jpa:
+    database: MYSQL
+    hibernate:
+      ddl-auto: none
+    show-sql: false
