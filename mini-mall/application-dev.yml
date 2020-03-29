@@ -15,6 +15,7 @@ spring:
   jackson:
     default-property-inclusion: non_null #为null的数据不返回
     time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
   sleuth:
     web:
       client:
