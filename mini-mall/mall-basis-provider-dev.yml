@@ -1,0 +1,19 @@
+server:
+  port: 9020
+spring:
+  application:
+    name: mall-basis-provider
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3380/mall_basis?characterEncoding=utf-8
+    username: root
+    password: Anbang713
+  jpa:
+    database: MYSQL
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+  data:
+    mongodb:
+      host: localhost
+      database: mall_basis

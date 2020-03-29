@@ -4,6 +4,8 @@ spring:
       trace:
         enabled: true
       enabled: true
+  redis:
+    host: localhost
   rabbitmq:
     host: localhost
     port: 5672
