@@ -5,7 +5,7 @@ spring:
     name: mall-investment-provider
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3380/mall_invest?characterEncoding=utf-8
+    url: jdbc:mysql://localhost:8066/mall_invest?characterEncoding=utf-8 # 8066是mycat的默认端口
     username: root
     password: Anbang713
   jpa:
